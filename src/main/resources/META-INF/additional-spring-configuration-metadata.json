@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "api.animals.service.url",
+      "type": "java.lang.String",
+      "description": "url to retrieve animals."
+    },
+    {
+      "name": "api.routes.service.url",
+      "type": "java.lang.String",
+      "description": "url to retrieve routes."
+    },
+    {
+      "name": "api.quizzes.service.url",
+      "type": "java.lang.String",
+      "description": "url to retrieve quizzes."
+    },
+    {
+      "name": "api.interest.service.url",
+      "type": "java.lang.String",
+      "description": "url to retrieve interest."
+    },
+    {
+      "name": "api.infos.service.url",
+      "type": "java.lang.String",
+      "description": "url to retrieve infos."
+    }
+  ] }
