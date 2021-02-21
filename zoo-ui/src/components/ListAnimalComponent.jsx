@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AnimalService from '../services/AnimalService'
 
-class ListAnimalComponents extends Component {
+class ListAnimalComponent extends Component {
     constructor(props) {
         super(props)
 
@@ -82,4 +82,4 @@ class ListAnimalComponents extends Component {
     }
 }
 
-export default ListAnimalComponents
+export default ListAnimalComponent
