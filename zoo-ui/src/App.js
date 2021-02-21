@@ -13,9 +13,9 @@ function App() {
           <Switch>
             <Route path = "/" exact component = {ListAnimalComponents}></Route>
             <Route path = "/animals" component = {ListAnimalComponents}></Route>
-            {/*<Route path = "/add-employee/:id" component = {CreateEmployeeComponent}></Route>*/}
-            {/*<Route path = "/view-employee/:id" component = {ViewEmployeeComponent}></Route>*/}
-            {/* <Route path = "/update-employee/:id" component = {UpdateEmployeeComponent}></Route> */}
+            {/*<Route path = "/add-animal/:id" component = {CreateAnimalComponent}></Route>*/}
+            {/*<Route path = "/view-animal/:id" component = {ViewAnimalComponent}></Route>*/}
+            {/* <Route path = "/update-animal/:id" component = {UpdateAnimalComponent}></Route> */}
             </Switch>
           </div>
       </Router>
