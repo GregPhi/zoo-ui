@@ -17,7 +17,7 @@ class AnimalService {
     }
 
     updateAnimal(animal, animalId){
-        return axios.put(ANIMAL_API_BASE_URL + animalId, animal);
+        return axios.put(ANIMAL_API_BASE_URL + animal, animalId);
     }
 
     deleteAnimal(animalId){
