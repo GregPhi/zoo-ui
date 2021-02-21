@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import ListAnimalComponents from './components/ListAnimalComponents';
-import HeaderComponents from './components/HeaderComponents';
+import ListAnimalComponent from './components/ListAnimalComponent';
+import CreateAnimalComponent from './components/CreateAnimalComponent';
+import ViewAnimalComponent from './components/ViewAnimalComponent';
+import HeaderComponent from './components/HeaderComponent';
 
 function App() {
   return (
     <div>
       <Router>
-        <HeaderComponents />
+        <HeaderComponent />
           <div className="container">
           <Switch>
-            <Route path = "/" exact component = {ListAnimalComponents}></Route>
-            <Route path = "/animals" component = {ListAnimalComponents}></Route>
-            {/*<Route path = "/add-animal/:id" component = {CreateAnimalComponent}></Route>*/}
-            {/*<Route path = "/view-animal/:id" component = {ViewAnimalComponent}></Route>*/}
-            {/* <Route path = "/update-animal/:id" component = {UpdateAnimalComponent}></Route> */}
+            <Route path = "/" exact component = {ListAnimalComponent}></Route>
+            <Route path = "/animals" component = {ListAnimalComponent}></Route>
+            <Route path = "/add-animal/:id" component = {CreateAnimalComponent}></Route>
+            <Route path = "/view-animal/:id" component = {ViewAnimalComponent}></Route>
             </Switch>
           </div>
       </Router>
