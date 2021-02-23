@@ -6,7 +6,6 @@ class CreateAnimalComponent extends Component {
         super(props)
 
         this.state = {
-            // step 2
             id: this.props.match.params.id,
             name: '',
             latin_name: '',
@@ -17,10 +16,7 @@ class CreateAnimalComponent extends Component {
         this.saveOrUpdateAnimal = this.saveOrUpdateAnimal.bind(this);
     }
 
-    // step 3
     componentDidMount(){
-
-        // step 4
         if(this.state.id === '_add'){
             return
         }else{
@@ -37,9 +33,6 @@ class CreateAnimalComponent extends Component {
     saveOrUpdateAnimal = (e) => {
         e.preventDefault();
         let animal = {name: this.state.name, latin_name: this.state.latin_name, description: this.state.description};
-        console.log('animal => ' + JSON.stringify(animal));
-
-        // step 5
         if(this.state.id === '_add'){
             AnimalService.createAnimal(animal).then(res =>{
                 this.props.history.push('/animals');
