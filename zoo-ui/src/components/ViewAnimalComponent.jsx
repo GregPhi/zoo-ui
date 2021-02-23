@@ -29,7 +29,7 @@ class ViewAnimalComponent extends Component {
                     <h3 className = "text-center"> View Animal Details</h3>
                     <div className = "card-body">
                         <div className = "row">
-                            <img class="card-img-top" src={this.state.animal.picture} alt="Pictre"/>
+                            <img className="card-img-top" src={this.state.animal.picture} alt="Pictre"/>
                         </div>
                         <br/><br/>
                         <div className = "row">
