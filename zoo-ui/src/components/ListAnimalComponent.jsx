@@ -51,7 +51,6 @@ class ListAnimalComponent extends Component {
                    <br></br>
                    <div className = "row">
                           <table className = "table table-striped table-bordered">
-
                               <thead>
                                   <tr>
                                       <th> Animal Picture</th>
@@ -80,9 +79,7 @@ class ListAnimalComponent extends Component {
                                   }
                               </tbody>
                           </table>
-
                    </div>
-
               </div>
               )}
             </>
